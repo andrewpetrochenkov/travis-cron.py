@@ -6,7 +6,7 @@ import travis_cron.api
 
 @public.add
 def crons(repo):
-    """return list of crons"""
+    """return a list of crons"""
     ENDPOINT = os.getenv("TRAVIS_ENDPOINT", "https://api.travis-ci.org")
     url = "%s/repo/%s/crons" % (ENDPOINT, repo.replace("/", "%2F"))
     r = travis_cron.api.request("GET", url)
