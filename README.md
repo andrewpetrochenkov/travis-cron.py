@@ -1,5 +1,6 @@
 <!--
 https://pypi.org/project/readme-generator/
+https://pypi.org/project/python-readme-generator/
 -->
 
 [![](https://img.shields.io/pypi/pyversions/travis-cron.svg?longCache=True)](https://pypi.org/project/travis-cron/)
@@ -11,7 +12,7 @@ https://pypi.org/project/readme-generator/
 $ [sudo] pip install travis-cron
 ```
 
-#### CLI
+#### Executable modules
 usage|`__doc__`
 -|-
 `python -m travis_cron.add repo [branch] [interval] [always]` |add travis cron
@@ -26,5 +27,5 @@ usage|`__doc__`
 +   [`travis-exec` - execute command for all travis repos](https://pypi.org/project/travis-exec/)
 
 <p align="center">
-    <a href="https://pypi.org/project/readme-generator/">readme-generator</a>
+    <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
 </p>

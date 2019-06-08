@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """clear all travis cron jobs"""
-import travis_env
+import travis_cron
 import click
 
 MODULE_NAME = "travis_cron.clear"
@@ -11,7 +11,7 @@ USAGE = 'python -m %s repo' % MODULE_NAME
 @click.command()
 @click.argument('repo', required=True)
 def _cli(repo):
-    travis_env.clear(repo)
+    travis_cron.clear(repo)
 
 
 if __name__ == '__main__':

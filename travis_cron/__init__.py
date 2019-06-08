@@ -34,11 +34,12 @@ def add(repo, branch="master", interval="monthly", always=True):
     r = travis_cron.api.request("POST", url, data)
     return r.json()
 
+
 @public.add
 def delete(repo, cron_id):
     """delete cron by id"""
     ENDPOINT = os.getenv("TRAVIS_ENDPOINT", "https://api.travis-ci.org")
-    url = "%s/cron/%s" % (ENDPOINT, repo.replace("/", "%2F"), cron_id)
+    url = "%s/cron/%s" % (ENDPOINT, cron_id)
     travis_cron.api.request("DELETE", url)
 
 
